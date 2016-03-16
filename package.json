@@ -1,0 +1,15 @@
+{
+  "name": "nfactorial.io",
+  "version": "1.0.0",
+  "description": "Website source (http://nfactorial.io/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nfactorial.io"
+  },
+  "author": "nfactorial",
+  "license": "ISC"
+}
