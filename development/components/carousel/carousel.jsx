@@ -9,6 +9,8 @@ export default React.createClass({
         return (
             <header className='hero' id='page-header'>
                 <div className='hero-body dark'>
+                    <div className='hero-text text-center'>
+                    </div>
                 </div>
             </header>
         );

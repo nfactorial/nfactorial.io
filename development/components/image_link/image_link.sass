@@ -1,0 +1,30 @@
+$image-link-border-radius: 12%
+$image-link-padding: 8px 0 8px 0
+
+$image-link-overlay-speed: 150ms    // How fast the overlay fades in
+$image-link-overlay-color: white    // The color of the image overlay
+$image-link-overlay-opacity: 0.3    // Opacity of overlay when visible
+
+.image-link-container
+  overflow: hidden
+  padding: $image-link-padding
+  position: relative
+  border-radius: $image-link-border-radius
+
+.image-link
+  position: relative
+
+.image-link-overlay
+  padding: 0
+  margin: 0
+  width: 100%
+  height: 100%
+  position: absolute
+  left: 0
+  top: 0
+  background-color: $image-link-overlay-color
+  opacity: 0
+  transition: opacity $image-link-overlay-speed ease-in-out
+
+  &:hover
+    opacity: $image-link-overlay-opacity
