@@ -2,6 +2,9 @@
 
 import React from 'react';
 
+require('./image_link.sass');
+
+
 /**
  * React component for image links on the page.
  * Specify the source image url with the src property. eg.

@@ -4,6 +4,8 @@ import React from 'react';
 
 import ImageLink from '../image_link/image_link.jsx';
 
+require('./article_link.sass')
+
 
 /**
  * React component to display a brief article description and link.
