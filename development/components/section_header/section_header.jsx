@@ -8,8 +8,8 @@ import React from 'react';
  *
  * <SectionHeader>Title Goes Here</SectionHeader>
  */
-export default React.createClass({
-    render: function() {
+export default class SectionHeader extends React.Component {
+    render() {
         return (
             <div className='row'>
                 <div className='col-md-12 text-center'>
@@ -18,4 +18,4 @@ export default React.createClass({
             </div>
         );
     }
-});
+}

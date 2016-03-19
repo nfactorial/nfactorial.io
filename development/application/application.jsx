@@ -7,12 +7,12 @@ import Carousel from '../components/carousel/carousel.jsx';
 /**
  * Main application component that loads the necessary data and displays the homepage.
  */
-export default React.createClass({
-    render: function() {
+export default class Application extends React.Component {
+    render() {
         return (
             <div>
                 <Carousel />
             </div>
         );
     }
-});
+}

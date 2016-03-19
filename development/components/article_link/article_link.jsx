@@ -15,16 +15,16 @@ require('./article_link.sass')
  *
  * <ArticleLink title='content title' img='article_image.png'>Content description goes here.</ArticleLink>
  */
-export default React.createClass({
-    render: function() {
+export default class ArticleLink extends React.Component {
+    render() {
         return (
             <div className='row'>
-                <ImageLink src={this.props.img} />
-                <div className='col-md-6' >
+                <ImageLink src={this.props.img}/>
+                <div className='col-md-6'>
                     <h2 className='article-title'>{this.props.title}</h2>
                     <p>{this.props.children}</p>
                 </div>
             </div>
         );
     }
-});
+}

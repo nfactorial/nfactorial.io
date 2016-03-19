@@ -11,8 +11,8 @@ require('./image_link.sass');
  *
  * <ImageLink src='myimage.png'/>
  */
-export default React.createClass({
-    render: function() {
+export default class ImageLink extends React.Component {
+    render() {
         return (
             <div className='image-link-container'>
                 <img className='img-responsive image-link' src={this.props.src} />
@@ -20,4 +20,4 @@ export default React.createClass({
             </div>
         );
     }
-});
+}
