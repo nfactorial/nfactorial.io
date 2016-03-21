@@ -7,15 +7,9 @@ node_modules
 # WebStorm IDE settings are local only
 .idea
 
-# Do not put build or distribution folders into source-control
+# Do not put build folders into source-control
 build
 
-# Webpack bundle is built locally
-development/bundle.js
-
 # No need to version control generated files
-development/**/*.html
 development/**/*.css
 development/**/*.css.map
-development/**/*-compiled.js
-development/**/*-compiled.js.map
