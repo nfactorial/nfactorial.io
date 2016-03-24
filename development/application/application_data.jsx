@@ -68,5 +68,36 @@ module.exports = {
                 }
             ]
         }
-    ]
+    ],
+    footer: {
+        columns: [
+            {
+                title: 'Social',
+                items: [
+                    {
+                        id: 'Twitter',
+                        link: 'https://twitter.com/nfactorial_wc'
+                    }
+                ]
+            },
+            {
+                title: 'Platforms',
+                items: [
+                    {
+                        id: 'Twitter',
+                        link: 'https://twitter.com/nfactorial_wc'
+                    }
+                ]
+            },
+            {
+                title: 'Contact',
+                items: [
+                    {
+                        id: 'Twitter',
+                        link: 'https://twitter.com/nfactorial_wc'
+                    }
+                ]
+            }
+        ]
+    }
 };

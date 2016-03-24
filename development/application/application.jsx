@@ -4,6 +4,7 @@ import React from 'react';
 
 import appData from './application_data.jsx';
 import NavBar from '../components/navbar/navbar.jsx';
+import Footer from '../components/footer/footer.jsx';
 import Carousel from '../components/carousel/carousel.jsx';
 import Articles from '../components/articles/articles.jsx';
 
@@ -21,6 +22,7 @@ export default class Application extends React.Component {
                 <Carousel data={appData.carouselItems} />
                 <NavBar data={appData.navbar} />
                 <Articles data={appData.articleSections} />
+                <Footer data={appData.footer} />
             </div>
         );
     }
