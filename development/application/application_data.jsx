@@ -113,6 +113,7 @@ module.exports = {
                 items: [
                     {
                         id: 'Twitter',
+                        type: 'icon',
                         link: 'https://twitter.com/nfactorial_wc'
                     }
                 ]
@@ -122,6 +123,8 @@ module.exports = {
                 items: [
                     {
                         id: 'Twitter',
+                        type: 'text',
+                        text: 'Some example text.',
                         link: 'https://twitter.com/nfactorial_wc'
                     }
                 ]
@@ -131,6 +134,8 @@ module.exports = {
                 items: [
                     {
                         id: 'Twitter',
+                        type: 'text',
+                        text: 'Some example text.',
                         link: 'https://twitter.com/nfactorial_wc'
                     }
                 ]

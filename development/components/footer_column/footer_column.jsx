@@ -9,15 +9,49 @@ require('./footer-column.sass');
  *
  */
 export default class FooterColumn extends React.Component {
+    /**
+     * Renders the HTML content for a text footer item.
+     * @param item Description of the footer item to be rendered.
+     * @returns {XML} Returns the HTML representation of the footer item.
+     */
+    renderTextLink(item) {
+        return (
+            <li>
+                <a href={item.link} target="_blank">
+                    {item.text}
+                </a>
+            </li>
+        );
+    }
+
+    /**
+     * Renders the HTML content for a text footer item.
+     * @param item Description of the footer item to be rendered.
+     * @returns {XML} Returns the HTML representation of the footer item.
+     */
+    renderIconLink(item) {
+        return (
+            <li>
+                <a href={item.link} target="_blank">
+                    <i className="twitter-logo fa fa-twitter fa-2x footer-social-icon text-center" />
+                </a>
+            </li>
+        );
+    }
+
     render() {
         const items = this.props.data.items.map( e => {
-            return (
-                <li>
-                    <a href={e.link} target="_blank">
-                        <i className="twitter-logo fa fa-twitter fa-2x footer-social-icon text-center" />
-                    </a>
-                </li>
-            );
+            switch ( e.type ) {
+                case 'text':
+                    return this.renderTextLink(e);
+
+                case 'icon':
+                    return this.renderIconLink(e);
+
+                default:
+                    console.log('Unknown footer item type \'' + e.type + '\'.' );
+                    break;
+            }
         });
 
         return (
