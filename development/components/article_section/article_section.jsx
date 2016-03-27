@@ -1,6 +1,7 @@
 "use strict";
 
 import React from 'react';
+import ArticleLink from '../article_link/article_link.jsx';
 
 require('./article_section.sass');
 
@@ -11,16 +12,9 @@ export default class ArticleSection extends React.Component {
     render() {
         const items = this.props.data.items.map( e => {
             return (
-                <div className="row" key={e.title} >
-                    <div className="col-sm-2">
-                        <img className="img-responsive article-image" src={e.image} />
-                        <div className="article-image-overlay" ></div>
-                    </div>
-                    <div className="col-md-6">
-                        <h2 className="article-title">{e.title}</h2>
-                        <p>{e.description}</p>
-                    </div>
-                </div>
+                <ArticleLink title={e.title} img={e.image} >
+                    {e.description}
+                </ArticleLink>
             );
         });
 

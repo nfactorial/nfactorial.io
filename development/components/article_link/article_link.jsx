@@ -18,7 +18,7 @@ require('./article_link.sass')
 export default class ArticleLink extends React.Component {
     render() {
         return (
-            <div className='row'>
+            <div className='row article-container'>
                 <ImageLink src={this.props.img}/>
                 <div className='col-md-6'>
                     <h2 className='article-title'>{this.props.title}</h2>
@@ -28,3 +28,15 @@ export default class ArticleLink extends React.Component {
         );
     }
 }
+/*
+<div className="row" key={e.title} >
+    <div className="col-sm-2">
+        <img className="img-responsive article-image" src={e.image} />
+        <div className="article-image-overlay" ></div>
+    </div>
+    <div className="col-md-6">
+        <h2 className="article-title">{e.title}</h2>
+        <p>{e.description}</p>
+    </div>
+</div>
+*/

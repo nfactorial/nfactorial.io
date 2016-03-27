@@ -65,6 +65,43 @@ module.exports = {
                     title: 'Game 1',
                     image: 'images/heli.jpg',
                     description: 'Fly a helicopter around and shoot stuff!'
+                },
+                {
+                    title: 'Game 2',
+                    image: 'images/heli.jpg',
+                    description: 'Fly a helicopter around and shoot stuff!'
+                },
+                {
+                    title: 'Game 3',
+                    image: 'images/heli.jpg',
+                    description: 'Fly a helicopter around and shoot stuff!'
+                },
+                {
+                    title: 'Game 4',
+                    image: 'images/heli.jpg',
+                    description: 'Fly a helicopter around and shoot stuff!'
+                }
+            ]
+        },
+        {
+            id: 'articles',
+            title: 'Articles',
+            description: 'Articles for you to read.',
+            items: [
+                {
+                    title: 'Article 1',
+                    image: 'images/heli.jpg',
+                    description: ''
+                },
+                {
+                    title: 'Article 2',
+                    image: 'images/heli.jpg',
+                    description: ''
+                },
+                {
+                    title: 'Article 3',
+                    image: 'images/heli.jpg',
+                    description: ''
                 }
             ]
         }

@@ -14,7 +14,7 @@ require('./image_link.sass');
 export default class ImageLink extends React.Component {
     render() {
         return (
-            <div className='image-link-container'>
+            <div className='col-sm-2 image-link-container'>
                 <img className='img-responsive image-link' src={this.props.src} />
                 <div className='image-link-overlay'></div>
             </div>
