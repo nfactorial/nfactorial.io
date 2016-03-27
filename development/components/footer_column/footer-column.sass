@@ -5,6 +5,10 @@ $codepen-logo-color: #DDD
 
 $footer-column-title-color: #fff
 
+$footer-link-color: #9AADA7
+$footer-link-visited: #5A7D77
+$footer-link-hover: #DAEDE7
+
 .footer-column-title
   font-size: 26px
   font-weight: 200
@@ -32,3 +36,11 @@ $footer-column-title-color: #fff
     transition: all 0.5s ease-in-out
     -webkit-transition: all 0.5s ease-in-out
     -moz-transition: all 0.5s ease-in-out
+
+.footer-column
+  li > a:link
+    color: $footer-link-color
+  li > a:hover
+    color: $footer-link-hover
+  li > a:visited
+    color: $footer-link-visited

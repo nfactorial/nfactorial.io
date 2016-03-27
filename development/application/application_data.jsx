@@ -122,10 +122,34 @@ module.exports = {
                 title: 'Platforms',
                 items: [
                     {
-                        id: 'Twitter',
+                        id: 'PlatformPC',
                         type: 'text',
-                        text: 'Some example text.',
-                        link: 'https://twitter.com/nfactorial_wc'
+                        text: 'Windows',
+                        link: 'https://msdn.microsoft.com/en-us/default.aspx'
+                    },
+                    {
+                        id: 'PlatformOSX',
+                        type: 'text',
+                        text: 'Apple OSX',
+                        link: 'https://developer.apple.com/'
+                    },
+                    {
+                        id: 'PlatformPS',
+                        type: 'text',
+                        text: 'http://www.scedev.net/',
+                        link: 'https://msdn.microsoft.com/en-us/default.aspx'
+                    },
+                    {
+                        id: 'PlatformXbox',
+                        type: 'text',
+                        text: 'Xbox',
+                        link: 'http://developer.xboxlive.com/en-US/Xbox/Pages/home.aspx'
+                    },
+                    {
+                        id: 'PlatformWiiU',
+                        type: 'text',
+                        text: 'WiiU',
+                        link: 'https://developer.nintendo.com/'
                     }
                 ]
             },
