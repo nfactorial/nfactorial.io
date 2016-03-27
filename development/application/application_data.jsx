@@ -112,9 +112,28 @@ module.exports = {
                 title: 'Social',
                 items: [
                     {
-                        id: 'Twitter',
+                        id: 'twitter',
                         type: 'icon',
+                        style: 'twitter',
                         link: 'https://twitter.com/nfactorial_wc'
+                    },
+                    {
+                        id: 'gplus',
+                        type: 'icon',
+                        style: 'gplus',
+                        link: '#'
+                    },
+                    {
+                        id: 'github',
+                        type: 'icon',
+                        style: 'github',
+                        link: 'https://github.com/nfactorial'
+                    },
+                    {
+                        id: 'codepen',
+                        type: 'icon',
+                        style: 'codepen',
+                        link: 'http://codepen.io/nfactorial/'
                     }
                 ]
             },

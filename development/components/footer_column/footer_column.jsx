@@ -4,6 +4,14 @@ import React from 'react';
 
 require('./footer-column.sass');
 
+var logoStyles = {
+    twitter: 'twitter-logo fa-twitter',
+    gplus: 'gplus-logo fa-google-plus',
+    facebook: 'facebook-logo fa-facebook',
+    github: 'facebook-logo fa-github',      // TEMP: Using facebook color for Github logo
+    codepen: 'codepen-logo fa-codepen'
+};
+
 
 /**
  *
@@ -30,10 +38,12 @@ export default class FooterColumn extends React.Component {
      * @returns {XML} Returns the HTML representation of the footer item.
      */
     renderIconLink(item) {
+        var style = 'fa fa-2x footer-social-icon text-center ' + logoStyles[ item.style ];
+
         return (
             <li>
                 <a href={item.link} target="_blank">
-                    <i className="twitter-logo fa fa-twitter fa-2x footer-social-icon text-center" />
+                    <i className={style} />
                 </a>
             </li>
         );
